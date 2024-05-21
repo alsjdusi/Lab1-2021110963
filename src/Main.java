@@ -3,6 +3,7 @@ import java.util.Map;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+
         //数据处理
         DataDeal dataDeal = new DataDeal();
         StringBuilder content = dataDeal.datadeal();
