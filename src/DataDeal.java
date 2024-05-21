@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 public class DataDeal {
-    public static void datadeal() {
+    public static StringBuilder datadeal() {
         // 指定要读取的文件路径
         String filePath = "D:\\javaCreate\\homework\\homework1\\homework1\\test\\test1.txt";
 
@@ -39,6 +39,6 @@ public class DataDeal {
         // 输出处理后的文本内容
         System.out.println(content);
 
-
+        return content;
     }
 }
