@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.List;
 
+
 class GraphDisplay extends JFrame {
 
     public GraphDisplay(String imagePath) {
