@@ -184,6 +184,7 @@ class DirectedGraph {
         return bridgeWords;
     }
 
+
     public List<String> InsertqueryBridgeWords(String word1, String word2) {
         List<String> bridgeWords = new ArrayList<>();
 
