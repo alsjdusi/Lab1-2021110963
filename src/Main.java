@@ -100,6 +100,7 @@ class DataDeal {
     }
 }
 
+
 class DirectedGraph {
 
     private final Map<String, Map<String, Integer>> adjacencyMap;
