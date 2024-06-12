@@ -135,6 +135,14 @@ class DirectedGraph {
         adjacencyMap.put(source, neighbors);
     }
 
+    public void addEdge1(String source, String destination) {
+        adjacencyMap.putIfAbsent(source, new HashMap<>());
+        adjacencyMap.putIfAbsent(destination, new HashMap<>());
+        Map<String, Integer> neighbors = adjacencyMap.getOrDefault(source, new HashMap<>());
+        neighbors.put(destination, neighbors.getOrDefault(destination, 0) + 1);
+        adjacencyMap.put(source, neighbors);
+    }
+
     // 打印有向图
     public void showDirectedGrap() {
         for (String source : adjacencyMap.keySet()) {
